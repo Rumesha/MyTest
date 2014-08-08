@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="MainIcon">
+       <attr name="title" format="string" />
+       <attr name = "iconresource" format = "integer"></attr>
+   </declare-styleable>
+    
+</resources>

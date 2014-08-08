@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.lk.slmatrimony"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="4"
+        android:background="@android:color/white"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:layout_marginBottom="4dp"
+            
+            android:orientation="horizontal" >
+
+            <com.lk.slmatromony.viewitems.MainIcon
+                android:id="@+id/profile_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tile_margin"
+                android:orientation="vertical"
+                custom:iconresource="@drawable/ic_action_user"
+                custom:title="@string/profile" >
+            </com.lk.slmatromony.viewitems.MainIcon>
+
+            <com.lk.slmatromony.viewitems.MainIcon
+                android:id="@+id/search_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/tile_margin"
+                custom:iconresource="@drawable/ic_action_search"
+                custom:title="@string/search" >
+            </com.lk.slmatromony.viewitems.MainIcon>
+
+            <com.lk.slmatromony.viewitems.MainIcon
+                android:id="@+id/interests_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/tile_margin"
+                custom:iconresource="@drawable/ic_action_favorite"
+                custom:title="@string/interests" >
+            </com.lk.slmatromony.viewitems.MainIcon>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:orientation="horizontal" >
+
+            <com.lk.slmatromony.viewitems.MainIcon
+                android:id="@+id/daily_five"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/tile_margin"
+                android:orientation="vertical"
+                custom:iconresource="@drawable/ic_action_paste"
+                custom:title="@string/daily_five" >
+            </com.lk.slmatromony.viewitems.MainIcon>
+
+            <com.lk.slmatromony.viewitems.MainIcon
+                android:id="@+id/surprise_me_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/tile_margin"
+                custom:iconresource="@drawable/ic_surprise_me"
+                custom:title="@string/suprise_me" >
+            </com.lk.slmatromony.viewitems.MainIcon>
+
+            <com.lk.slmatromony.viewitems.MainIcon
+                android:id="@+id/upgrade_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/tile_margin"
+                custom:iconresource="@drawable/ic_action_upload"
+                custom:title="@string/upgrade" >
+            </com.lk.slmatromony.viewitems.MainIcon>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:background="@color/bg_color_yellow"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/my_matches_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_head_one_way_shade"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/my_matches" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/shadow_gray" />
+    </LinearLayout>
+
+</LinearLayout>

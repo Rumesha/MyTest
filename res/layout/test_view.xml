@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.lk.slmatrimony"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.lk.slmatromony.viewitems.MainIcon
+        android:id="@+id/mainIcon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        custom:iconresource="@drawable/icon_pg"
+        custom:title="search" >
+    </com.lk.slmatromony.viewitems.MainIcon>
+    
+    <com.lk.slmatromony.viewitems.MainIcon
+        android:id="@+id/mainIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mainIcon1"
+        custom:iconresource="@drawable/icon_pg"
+        custom:title="VVVVVVV" >
+    </com.lk.slmatromony.viewitems.MainIcon>
+
+</RelativeLayout>
